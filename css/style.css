@@ -1,0 +1,30 @@
+.row .div-h-400{
+    height: 400px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.img-contant{
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* .row div img::after{
+    border: 2px solid rgb(243, 4, 4);
+    margin-top: 10px;
+}
+
+.row div img::after {
+
+  }
+   */
+  /* Style the added content */
+.row div::after {
+    content: "";
+    display: flex;
+    border-bottom: 3px solid rgb(248, 243, 243);
+  }
