@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment (CSS & HTML)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            color:white;
+            box-sizing: border-box;
+        }
+        .continer{
+            width: 100%;
+            height: 650px;
+            background-color: rgb(3, 3, 3);
+        }
+        .continer h1{
+            text-align: center;
+            padding: 30px;
+            font-weight: 500;
+        }
+
+        .row{
+            width: 100%;
+            height: 550px;
+            background-color: rgb(5, 5, 5);
+            border: 3px solid rgb(0, 238, 255);
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col-1{
+            width: 25%;
+            height: 500px;
+            background-color: azure;
+            margin: 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+            flex-flow: column wrap;
+            display: flex;
+            align-items: center;
+            transition: .5s ease-in-out;
+        }
+
+        .col-1:hover{
+            scale: 1.05;
+        }
+
+        .col-1 h2{
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 10px;      
+
+        }
+
+        .col-1 img{
+            width: 150px;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .col-1 ul li{
+            list-style: none;
+            z-index: 100;
+            color: black;
+            text-align: center;
+            line-height: 2;
+            border: 1px solid green;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            font-size: .9rem;
+            padding: 3px;
+            transition: .2s ease;
+        }
+
+        .col-1 ul li:hover{
+            border-right: 3px solid green;
+            border-left: 3px solid green;
+            background-color: rgba(127, 255, 212, 0.404);
+        }
+
+        .col-1 button {
+            width: 150px;
+            background-color: azure;
+            color: green;
+            border: 2px solid green;
+            border-radius: 6px;
+            padding: 10px;
+            position:fixed;
+            bottom: 30px;
+            font-weight: 600;
+            transition: .3s ease-in-out;
+        }
+
+        .col-1 button:hover {
+            background-color: rgb(3, 78, 32);
+            color: azure;
+            border: 2px solid green;
+            position:fixed;
+            bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <h1>Important Information</h1>
+        <div class="row">
+            <div class="col-1">
+                <h2>Local Market</h2>
+                <img src="images/local-market.svg" alt="">
+                    <ul>
+                        <li>Local Market Research</li>
+                        <li>NBR Enlisted Companies</li>
+                        <li>Government Tender</li>
+                        <li>Software and IT Service Catalog</li>
+                        <li>Events</li>
+                        <li>Awards</li>
+                    </ul>
+                    <button>View All</button>
+            </div>
+
+            <div class="col-1">
+                <h2>International Market</h2>
+                <img src="images/international-market.svg" alt="">
+                <ul>
+                    <li>International Market Research</li>
+                    <li>B2B</li>
+                    <li>Events</li>
+                    <li>Awards</li>
+                </ul>
+                <button>View All</button>
+            </div>
+                       <div class="col-1">
+                <h2>Policies, Acts & Laws</h2>
+                <img src="images/policy.svg" alt="">
+                <ul>
+                    <li>BNDA</li>
+                    <li>Export Policy</li>
+                    <li>EPB Ordinance</li>
+                    <li>Import Policy order</li>
+                    <li style="line-height: 1.2;">ICT in Education Master Plan <br> Review Report-2019</li>
+                    <li>Digital Security Act 2018</li>
+                </ul>
+                <button>View All</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
