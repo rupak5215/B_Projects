@@ -5,31 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Navbar of 10 Minutes School</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
     <Style>
-        .container-fluid img{
-            height: 40px;
+        *{
+            font-family: "Noto Serif Bengali", serif;
         }
+
         .container-fluid input {
-            width: 250px;
+            width: 350px;
             border-radius: 20px;
         }
 
-        .container-widthfull {
-            width: 100%;
+        .content-b{
+            border: 10px solid goldenrod;
+            box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
         }
-    </Style>
-  </head>
+        .img-cen{
+            width: 500px;
+            height: Auto;
+            margin: 50px;
+        }
+     </Style>
+    </head>
+
 <body>
     <nav class="navbar bg-body-tertiary navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="container-fluid" src="10mslogo-svg.svg" alt="10mslogo"></a>
+            <a class="navbar-brand" href="#"><img class="img-fluid" width="120px" src="10mslogo-svg.svg" alt="10mslogo"></a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="কোর্স, কিংবা স্কুল প্রোগ্রাম সার্চ করুন" aria-label="Search">
             </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -101,13 +110,17 @@
                         <li><a class="dropdown-item" href="#">অ্যাফিলিয়েট হিসাবে যোগ দিন</a></li>
                     </ul>
                 </li>
-                <button class="btn btn-success px-3" type="submit">লগ ইন</button>
+                <button class="btn btn-success px-5 ms-5" type="submit">লগ ইন</button>
             </ul>
 
 
             </div>
         </div>
     </nav>
+
+    <div class="container-fluid d-flex justify-content-center">
+        <img src="Naboborsha.jpg" class="img-fluid img-cen content-b" alt="">
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
