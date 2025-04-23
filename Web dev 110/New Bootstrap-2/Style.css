@@ -1,0 +1,44 @@
+.btn{
+    border-radius: 25px;
+  }
+
+  .btn-primary{
+    background-color: rgb(42, 1, 81);
+    color:yellow;
+    border-color: rgb(42, 1, 81);;
+  }
+
+  .btn-primary:hover{
+    background-color:rgb(3, 125, 22);
+    border-color: rgb(3, 125, 22);
+  }
+
+  .text-primary{
+    color:rgb(42, 1, 81)!important;
+  }
+  
+  .text-primary:hover{
+    color:rgb(3, 118, 30)!important;
+  }
+
+  .fa-rocket{
+    color: purple !important;
+  }
+
+  .fa-clock{
+    color:rgb(246, 195, 42)!important;
+  }
+
+  .fa-comments{
+    color:rgb(11, 117, 239)!important;
+  }
+
+  .custom-bullets ul li{
+    margin-bottom: 15px;
+    /* list-style: none; */
+  }
+
+  .fa-check{
+    color:rgb(11, 117, 239)!important;
+    font-size: 20px;
+  }
